@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#whychoosesection">
+                            Why Choose Us?
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#exploresection" id="navItem2">Explore Menu</a>
+                        <a class="nav-link" href="#deliversection" id="navItem3">Delivery & Payment</a>
+                        <a class="nav-link" href="#followsection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#" id="navItem4" onclick="display('sectionloginpage')">Login</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                <button class="custom-button">View Menu</button>
+                <button class="custom-outline-button">Order Now</button>
+            </div>
+        </div>
+        <div class="wcu-section pt-5 pb-5 con">
+            <div class="container con">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-section-heading" id="whychoosesection">Why Choose Us?</h1>
+                        <p class="wcu-section-description">
+                            We use both original recipes and classic versions of famous food
+                            items.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Food Service</h1>
+                            <p class="wcu-card-description">
+                                Experience fine dining at the comfort of your home. All our
+                                orders are carefully packed and arranged to give you the nothing
+                                less than perfect.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Fresh Food</h1>
+                            <p class="wcu-card-description">
+                                The Fresh Food group provides fresh-cut fruits and vegetables
+                                directly picked from our partner farms and farm houses so that
+                                you always get them tree to plate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Best Offers</h1>
+                            <p class="wcu-card-description">
+                                Food Coupons & Offers upto
+                                <span class="offers">50% OFF</span>
+                                and Exclusive Promo Codes on All Online Food Orders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-menu-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="menu-section-heading" id="exploresection">Explore Menu</h1>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3" onclick="display('sectionnonvegpage')">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Non-Veg Starters</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3" onclick="display('sectionvegpage')">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Veg Starters</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" onclick="display('sectionsouppage')">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Soups</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Fish & Sea food</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Main Course</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Noodles</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Salads</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Desserts</h1>
+                            <a class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="healthy-food-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="healthy-food-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h1 class="healthy-food-section-heading">
+                            Fresh, Healthy, Organic, Delicious Fruits
+                        </h1>
+                        <p class="healthy-food-section-description">
+                            Say no to harmful chemicals and go fully organic with our range of
+                            fresh fruits and veggies. Pamper your body and your senses with
+                            the true and unadulterated gifts from mother nature. with the true
+                            and unadulterated gifts from mother nature.
+                        </p>
+                        <button class="custom-button">Watch Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery-and-payment-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-1 order-md-2" id="deliversection">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="delivery-and-payment-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                        <h1 class="delivery-and-payment-section-heading">
+                            Delivery and Payment
+                        </h1>
+                        <p class="delivery-and-payment-section-description">
+                            Enjoy hassle-free payment with the plenitude of payment options
+                            available for you. Get live tracking and locate your food on a
+                            live map. It's quite a sight to see your food arrive to your door.
+                            Plus, you get a 5% discount on every order every time you pay
+                            online.
+                        </p>
+                        <button class="custom-button">Order Now</button>
+                        <div class="mt-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            We have a surprise gift for you
+                        </p>
+                        <div class="d-md-none">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                        </div>
+                        <div>
+                            <button class="custom-button">Redeem Gift</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="follow-us-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" id="followsection">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
+                        <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+                        <p class="footer-section-address">
+                            123 Ayur Vigyan Nagar, New Delhi, India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="sectionloginpage">
+        <center>
+            <div class="main col-10 col-md-12">
+                <div class="rounded-circle h-50 w-50 m-auto pb-4">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="login-logo h-25 w-25" />
+                </div>
+                <form action="">
+                    <label for="first">Username:</label>
+                    <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+                    <label for="first">Gmail ID:</label>
+                    <input type="text" id="first" name="first" placeholder="Enter your Gmail" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    <label for="first">Phone:</label>
+                    <input type="number" id="first" name="first" placeholder="Enter your Phone number" required>
+
+                    <div class="wrap">
+                        <button class="login-button" type="submit" onclick="solve()">Submit</button>
+                    </div>
+                </form>
+                <p>Not registered?<a href="#" style="text-decoration: none;">Create an account</a></p>
+            </div>
+        </center>
+    </div>
+
+
+    <div id="sectionnonvegpage">
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo mt-3" />
+                        <p class="footer-section-non-veg mt-2">Non Vegitarian Sites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-menu-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?t=st=1703253340~exp=1703256940~hmac=a09b585cd562895b1f0a3718cc9bb3f434f96ea878d8934b42178f7bf698efaa&w=900" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Hydrabad Biriyani</h1>
+                            <p class="non-veg-sec-description">South indias famous and delicies food</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food_1150-26576.jpg?w=826&t=st=1703255722~exp=1703256322~hmac=31ad03766661ccba75dda612a54f3d271c6dfcd53cd6b16aecc61adf22f6dd0d" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Chicken Fryid Rice</h1>
+                            <p class="non-veg-sec-description">North indias famous and delicies food</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?t=st=1703253340~exp=1703256940~hmac=a09b585cd562895b1f0a3718cc9bb3f434f96ea878d8934b42178f7bf698efaa&w=900" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Chicken Noodules</h1>
+                            <p class="non-veg-sec-description">North indias famous and delicies food</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/fresh-salmon-garnish-with-salad_144627-6631.jpg?w=740&t=st=1703304972~exp=1703305572~hmac=2ae7bf677e445656178557120775b9f0dbff85b01cfaa3ba689fdf5937686498" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Fish Fry</h1>
+                            <p class="non-veg-sec-description">Korean style fish fry</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/delicious-chicken-table_144627-8758.jpg?w=740&t=st=1703305244~exp=1703305844~hmac=16f0b8977bc1f6ac92b21e82335a7e6ce071242a9bb7ad3ef19504cb89f474ae" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Westen Style Chicken fry</h1>
+                            <p class="non-veg-sec-description">Crunchy and Spicy</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/delicious-chicken-table_144627-8758.jpg?w=740&t=st=1703305244~exp=1703305844~hmac=16f0b8977bc1f6ac92b21e82335a7e6ce071242a9bb7ad3ef19504cb89f474ae" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Westen Style Chicken fry</h1>
+                            <p class="non-veg-sec-description">Crunchy and Spicy</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/high-angle-pakistan-meal-composition_23-2148821517.jpg?w=740&t=st=1703305980~exp=1703306580~hmac=26e9479ed6c669cf3605a1afb45acbd56a669c4475ee4554515a09a542716ebb" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Dindugal Thalapakatti Briyani</h1>
+                            <p class="non-veg-sec-description">Tamilnadu's famous biriyani</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/delicious-goulash-stew-table_23-2149371730.jpg?w=740&t=st=1703306359~exp=1703306959~hmac=6f303551cba768945bc2ba65b6751e91bb6f2566676dd452d4704fb4099654ab" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Mutton stew</h1>
+                            <p class="non-veg-sec-description">Arabien style Mutton stew</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/green-curry-with-eggs-black-cups-with-lemon-lemongrass-chili-tomatoes_1150-25746.jpg?w=740&t=st=1703307158~exp=1703307758~hmac=5ec806349b732a7a6b5b85cf47a8496fa810ecdaefd3052e3143e3553dba3e3d" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Egg Masala</h1>
+                            <p class="non-veg-sec-description">Andra style Egg masala</p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary m-auto" onclick="display('sectionhome')">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionvegpage">
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo mt-3" />
+                        <p class="footer-section-non-veg mt-2">
+                            Vegitarian Sites
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="explore-menu-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/aloo-paratha-gobi-paratha-also-known-as-potato-cauliflower-stuffed-flatbread-dish-originating-from-indian-subcontinent_466689-76172.jpg?w=900&t=st=1704264541~exp=1704265141~hmac=436804fcb4c24ba5c76f766889017dff4d3c0ef759d07eecdd5787e602ee2251" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Aloo Parotta</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://as1.ftcdn.net/v2/jpg/00/90/47/04/1000_F_90470417_JGLal9KhBNgMMN6tIV7QTG1dFlLLxdS7.jpg" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Stuffed Parotta</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/curry-fried-rice_1339-1814.jpg?w=900&t=st=1704264830~exp=1704265430~hmac=9cee8a0a4b4feae51ae55ecd09afe32f54a477bc3e0ae50305e55478227c395f" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Lemon Rice</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://as1.ftcdn.net/v2/jpg/00/79/14/88/1000_F_79148859_wBJui29eQ4iJ1ADMB5zhbSxm3hrGDaPz.jpg" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Poori</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/spicy-minced-pork-rice-black-plate_1150-23726.jpg?w=900&t=st=1704264888~exp=1704265488~hmac=cabcdbd72f6d372a51c2e9607f975abd73ff226a9ce1364f486549b02e6a8d3a" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Curd Rice</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/fried-rice_1203-8380.jpg?w=900&t=st=1704264967~exp=1704265567~hmac=1dea414079ea9eb337188bc3d057cf969cc5b2c710af08f95ef7c5ae2d45b8ba" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Ghee Rice</h1>
+                            <p class="non-veg-sec-description"></p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/vegetarian-rice-bowl-marble-surface_114579-63883.jpg?w=900&t=st=1704265056~exp=1704265656~hmac=9477e786d8d5aa79429965074f2d60a68088dbdb295a34ef75629a00ee4df91e" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Cocunt Rice</h1>
+                            <p class="non-veg-sec-description"></p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/appetizing-healthy-rice-with-vegetables-white-plate-wooden-table_2829-19768.jpg?w=900&t=st=1704265105~exp=1704265705~hmac=c3fb742497be1830bc516668565380d612f505139d69e6b69cc9211a956af9fa" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Vegetable Briyani</h1>
+                            <p class="non-veg-sec-description"></p>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/curry-fried-rice_1339-1814.jpg?w=900&t=st=1704264830~exp=1704265430~hmac=9cee8a0a4b4feae51ae55ecd09afe32f54a477bc3e0ae50305e55478227c395f" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Lemon Rice</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary m-auto" onclick="display('sectionhome')">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionsouppage">
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo mt-3" />
+                        <p class="footer-section-non-veg mt-2">
+                            Soups Sites
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/noodle-soup-winter-meals-seeds_23-2148717411.jpg?w=740&t=st=1704269650~exp=1704270250~hmac=30818184f58bbb62fc63cee9bd87bbb72c4205ebd3171365ce14dc576d8aab30" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Noodle Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/red-lentil-soup-with-slice-lemon-breadcrumbs_140725-1001.jpg?w=740&t=st=1704269780~exp=1704270380~hmac=1053567429561b5f196b7cab93483801ce293fe97aedcb64feef506917d1060d" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Red Lentil Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/tomato-soup-with-green-table_140725-2447.jpg?w=826&t=st=1704269843~exp=1704270443~hmac=045d2e2ec0cc9f03a6782d54a1e36dc5217b01945e05a66c5b2a955ea6c95016" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Tomato Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/fresh-vegetable-soup-served-rustic-crockery-generated-by-ai_24640-82343.jpg?t=st=1704269910~exp=1704273510~hmac=2f0da51ab576b9ffbb1562fba05adf0087230f922571544d38158cf9a8809624&w=1060" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Vegitable Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/rustic-pumpkin-soup-served-with-fresh-bread-generated-by-ai_24640-81476.jpg?t=st=1704270010~exp=1704273610~hmac=b31346b726689d13000ad35c69d7b53f60018619a33564dcf3f3d68e4d8c077e&w=1060" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Pumpkin Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/view-delicious-cream-soup_23-2150777753.jpg?t=st=1704270053~exp=1704273653~hmac=04fb9cf0974b37fe1060e2656f59a032ec4c757534857eccbb3c77240952e020&w=1060" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Mango Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/bowl-hot-soup-steaming-table-generated-by-ai_188544-39119.jpg?t=st=1704270135~exp=1704273735~hmac=ffa8333000e38778051c727463d3b71bceaac06448c51167fef9eaa7870c6413&w=1060" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Carrot Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/healthy-vegetarian-soup-with-fresh-lemon-garnish-generated-by-ai_188544-24666.jpg?t=st=1704270219~exp=1704273819~hmac=238da5042e1fbb4bcdc1ee5f4bba3bafce59285cd5071f1149a67a9d10279f85&w=1060" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Mushroom Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/top-view-delicious-autumnal-food_23-2148666916.jpg?w=900&t=st=1704270279~exp=1704270879~hmac=1689542ebcb1b4e1ed5242c5bf963e96db51f9bdf97045b42e78d960690d15c2" class="menu-item-image w-100" />
+                            <h1 class="non-veg-sec-title">Corn Soup</h1>
+                            <a class="non-veg-order-link">
+                                Order now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary m-auto" onclick="display('sectionhome')">Home</button>
+                </div>
+
+                <!--login pae section-->
+
+
+                <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
